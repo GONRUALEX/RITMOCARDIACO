@@ -1,0 +1,114 @@
+ion-content{
+
+    .content{
+        
+        background: url("https://media.giphy.com/media/qajXB8w1cnVOo/giphy.gif") no-repeat  ;  
+        background-size:cover;
+       min-height: 950px;
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        height: 100%;
+        justify-content:flex-start;
+        align-items: center;
+        color:whitesmoke;
+        
+           
+    .barra{
+        height: 40px;
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start;
+
+        .flecha{
+            padding-left:5px;
+            padding-top:5px;
+            height: 30px;
+            width: 30px;
+             color:rgb(255, 255, 255);
+             
+        }
+    }
+
+        .logo{
+            margin:10px;
+            background:url(../../../assets/logo/logo.png)  no-repeat;
+            background-size:contain;
+          
+            min-height: 200px;
+            min-width: 300px;
+        }
+    }
+
+    .item{
+        border-radius: 5px;
+        border:solid 1px rgb(1, 9, 32);
+        width:300px;
+        display:flex;
+        flex-direction: column;
+        color:rgb(171, 196, 207);
+
+        .horizontal{
+            display:flex;
+            flex-direction: row;
+        }
+        .errors{
+            color:rgb(17, 184, 25);
+        }
+
+        .stick{
+            color:rgb(17, 184, 25);
+            padding:10px;
+        }
+
+        .eye{
+            color:rgb(254, 255, 254);
+            width:30px;
+            height: 25px;
+            padding:10px;
+        }
+        
+    }
+    .center{
+       
+        display:flex;
+        flex-direction:column;
+        max-width:400px;
+      
+       min-height: 500px;
+        min-width: 300px;
+        justify-content:space-around;
+        align-items:center;
+        
+    }
+    .button{
+        background-color:"red";
+        width:100%;
+        height: 50px;
+        margin-top:10px;
+        font-size:1.2em;
+        color:white;
+        border-radius:3px;
+        opacity:0.3;
+        outline:none;
+        
+     }
+ 
+     .buttondisabled{
+        background: linear-gradient(to right,rgb(255, 153, 0),rgb(8, 0, 0),rgb(255, 153, 0),rgb(0, 122, 221));
+         opacity:0.3;
+     }
+     .buttonenabled{
+         border-radius: 5px;
+         background: linear-gradient(to bottom,rgb(11, 70, 231),rgb(6, 79, 173),rgb(1, 48, 119),rgb(7, 5, 117),rgb(7, 5, 117),rgb(7, 5, 117));
+         opacity:1.0;
+         color:white;
+     }
+     button::first-letter{
+         text-transform: capitalize;
+     }
+     button:active{
+         opacity:0.8;
+    }   
+}

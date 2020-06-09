@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\resources",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\app",
+    "\\src\\app\\app\\modal",
+    "\\src\\app\\app\\ritmo-cardiaco",
+    "\\src\\app\\app\\tabs",
+    "\\src\\assets",
+    "\\src\\assets\\i18n"
+  ],
+  "SelectedNode": "\\src\\app\\app\\modal\\modal.page.scss",
+  "PreviewInSolutionExplorer": false
+}

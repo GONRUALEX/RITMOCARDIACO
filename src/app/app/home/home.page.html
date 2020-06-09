@@ -1,0 +1,31 @@
+<app-header titulo="{{'home.title' | translate}}" backButton="no"></app-header>
+
+<ion-content>
+  
+ 
+<button (click)="scan()" >{{key2}}
+  <ion-icon name="Bluetooth"></ion-icon>
+</button>
+
+<button (click)="ver()" >eeee{{key2}}
+  <ion-icon name="Bluetooth"></ion-icon>
+</button>
+
+
+ <ion-list>
+   <ion-card-content *ngFor="let device of devices" (click)="deviceSelected(device)">
+     <p>{{device.name || 'Unname'}}</p>
+     <p>{{device.id}}</p>
+     <p> RSSI: {{device.rssi}}</p>
+   </ion-card-content>
+
+    <ion-card-content *ngFor="let device of devices" (click)="deviceSelected(device)">
+     <p>{{device.name || 'Unname'}}</p>
+     <p>{{device.id}}</p>
+     <p> RSSI: {{device.rssi}}</p>
+   </ion-card-content>
+ </ion-list>
+
+
+ 
+</ion-content>

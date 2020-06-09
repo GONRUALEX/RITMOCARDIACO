@@ -1,0 +1,233 @@
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #fff;
+    border-color: rgb(30, 132, 173) transparent rgb(25, 175, 168) transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }  
+
+.toast{
+    background-color:blue;
+    color:green;
+}
+
+.contenedor{
+
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contenedorpulsera{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    margin:20px;
+      
+}
+
+.img{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-top:0px;
+    
+}
+.warning{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    color:darkred;
+    
+}
+.contenedoremparejando{
+    width:100%;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+.contenedoremparejandof{
+    width:100%;
+    height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:-60px;
+    
+}
+.emparejando{
+
+ 
+    color:rgb(58, 189, 206);
+}
+.led-blue {
+    margin: 20px auto;
+    width: 12px;
+    height: 12px;
+    background-color: #4AB;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0 -1px 7px 1px, inset #006 0 -1px 9px, #06F 0 2px 14px;
+}
+.led-red {
+    margin: 20px auto;
+    width: 12px;
+    height: 12px;
+    background-color: #940;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 7px 1px, inset #600 0 -1px 9px, #F00 0 2px 12px;
+}
+
+.contenedorpulseraconectada{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+ 
+
+}
+
+
+
+img:active{
+    border:1px solid green;
+    background-color:lightgreen;
+}
+
+.heart{
+    display:flex;
+    flex-direction: row;
+    border:1px solid #F00;
+    border-radius: 20px;
+    margin-left:20px;
+    margin-right: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+   
+    padding-top:-10px;
+}
+
+.botoncardiaco{
+    border:1px solid rgb(101, 210, 224);
+    border-radius: 20px;
+    margin-left:30px;
+    margin-right: 30px;
+    padding-left:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right: 30px;
+    margin :30px;
+    background-color:rgb(120, 194, 223);
+}
+.textoRitmo{
+    padding:30px;
+    color:darkorange;
+}
+
+.cardheader{
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    background-color: lightskyblue;
+}
+
+.cardcontent{
+    border-radius: 20px;
+    font-size: 16px;
+
+    color:rgb(45, 127, 141);
+}
+
+.medica2{
+    
+    display:flex;
+    flex-direction: row;
+    
+    justify-content: center;
+   
+}
+.medica{
+    
+    
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: rgb(18, 193, 216);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgb(18, 193, 216); 
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+  

@@ -1,0 +1,145 @@
+ion-content{
+    .content{
+        display:flex;
+        flex-direction:column;
+        .item-list{
+            border-left:solid 2px var(--ion-color-colorbasico);
+            width:100%;
+            height: 100%;
+            
+          }
+        .item-list-open{
+          
+            width:100%;
+            height: 100%;
+        }
+        .list{
+          //  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+            display:flex;
+            flex-direction:column;
+           
+            width:90%;
+            margin:0 auto;
+            height: 80px;
+            margin-top:0%;
+
+
+            .card{
+              //  background-image: linear-gradient(to right, rgba(9, 255, 0, 0), rgba(255,0,0,1));
+                border-radius: 5px;
+              //  background:  white;
+                    
+                
+               
+                &-title{
+                  //  border-bottom:solid 1px var(--ion-color-colorbasico);
+                //    border-bottom-left-radius: 5px;
+                   // border-bottom-right-radius: 5px;
+                  /* animation-name: parpadeo;
+                   animation-duration: 5s;
+                   animation-timing-function: linear;
+                   animation-iteration-count: infinite;     
+                   -webkit-animation-name:parpadeo;
+                   -webkit-animation-duration: 5s;
+                   -webkit-animation-timing-function: linear;
+                   -webkit-animation-iteration-count: infinite;*/
+                    width:100%;
+                    height: 30%;
+                    padding:1%;
+                    font-size:1.0em;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:rgb(5, 82, 82);
+                  // background-color:linear-gradient(rgb(6,6,6),rgb(1,1,1,1));
+                }
+                &-title:first-letter{
+                    text-transform:capitalize;
+                }
+
+                &-title-open{
+                   // border:solid 1px var(--ion-color-colorbasico);
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    height: 30%;
+                    padding:1%;
+                    font-size:1.0em;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    color:rgb(170, 11, 19);
+                   // background-color:white;
+                }
+                &-title-open:first-letter{
+                    text-transform:capitalize;
+                }
+
+                &-content{
+                    height: 70%;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    padding:1%;
+                    font-size:0.9em;
+                    color:var(--ion-color-colorbasico);
+                 
+                   // border-bottom:1px solid var(--ion-color-colorbasico);
+                   // background-color:var(--ion-color-colorbasico);
+                }
+                &-content:first-letter{
+                    text-transform:capitalize;
+                    
+                }
+                &-content-open{
+                    height: 70%;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                    padding:1%;
+                    font-size:0.9em;
+                    color:rgb(170, 11, 19);
+
+                }
+                &-date{
+                    font-size:0.8em;
+                    font-family:Verdana, Geneva, Tahoma, sans-serif;
+                }
+            }
+
+        }
+}
+}
+
+.slide{
+    
+    background-color:var(--ion-color-colorbasico);
+}
+
+.slideUp{
+    background-color:var(--ion-color-colorbasico);
+    border-radius:10px;
+    font-size:50px;
+    width:100px;
+    
+}
+
+.slideUp:active{
+    background-color:rgb(31, 199, 135);
+    
+    border:none;
+    
+}
+.icon:active{
+    background-color:rgb(31, 199, 135);
+
+}
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }

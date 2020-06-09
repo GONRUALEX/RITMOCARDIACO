@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "573688818660",
+    "firebase_url": "https://autorregulacion-emocional.firebaseio.com",
+    "project_id": "autorregulacion-emocional",
+    "storage_bucket": "autorregulacion-emocional.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573688818660:android:27a21ed4366711c83335f1",
+        "android_client_info": {
+          "package_name": "com.autorregulacion.emocional"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573688818660-b1mcekt08bkt1uf9mkp0hqpm14cnk2ku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXjvoyXdASFSFypLZedQKhTyenhLXCMUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573688818660-b1mcekt08bkt1uf9mkp0hqpm14cnk2ku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

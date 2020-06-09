@@ -1,0 +1,20 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom" color="colorbasico">
+    <ion-tab-button tab="home">
+      <ion-icon name="book"></ion-icon>
+      <ion-label>{{'tabs.home' | translate}}</ion-label>
+    </ion-tab-button>
+     <ion-tab-button tab="ritmo-cardiaco">
+      <ion-icon name="heart"></ion-icon>
+      <ion-label>{{'tabs.ritmoCardiaco' | translate}}</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="notification">
+      <ion-icon name="notifications"></ion-icon>
+      <ion-label>{{'tabs.notification' | translate}}</ion-label><ion-badge *ngIf="notificationNumber>0" color="danger">{{notificationNumber}}</ion-badge>
+    </ion-tab-button>
+    <ion-tab-button tab="more">
+      <ion-icon name="more"></ion-icon>
+      <ion-label>{{'tabs.more' | translate}}</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

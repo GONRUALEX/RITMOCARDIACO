@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Inside</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  Welcome to the members only area!
+ 
+  <p>{{ data }}</p>
+ 
+  <ion-button expand="full" (click)="loadSpecialInfo()">Load Special Info</ion-button>
+  <ion-button expand="full" (click)="logout()">Logout</ion-button>
+  <ion-button expand="full" (click)="clearToken()">Clear JWT</ion-button>
+ 
+</ion-content>

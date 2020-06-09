@@ -1,0 +1,67 @@
+{
+    "login": {
+        "email":"email",
+        "password":"contraseña",
+        "login":"enviar",
+        "refreshPassword":"¿Has olvidado la contraseña?",
+        "policy":"politica de privacidad",
+        "registry":"Regístrate"
+    },
+
+    "signin":{
+        "title":"Autorregulación emocional",
+        "name":"nombre",
+        "surname":"apellido",
+        "birthdate":"fecha de nacimiento",
+        "email":"Email",
+        "password":"Contraseña",
+        "repeatpassword":"Repite la contraseña",
+        "send":"Enviar",
+        "errors":{
+            "require":"Este campo es requerido",
+            "min":"Este campo debe tener mínimo 8 caracteres",
+            "max":"Máximo número de caracteres 30",
+            "password":"La contraseña debe tener una letra mayúscula, una letra minúscula, un número y un caracter especial (@ ! _ % * ? &)",
+            "email":"El formato del email no es correcto",
+            "equals":"Las contraseñas no son iguales",
+            "date":"La fecha debe ser mayor de 1920 y al menos debes tener 6 años"
+        }
+
+    },
+    "language":{
+        "title":"idioma",
+        "english":"ingles",
+        "spanish":"español",
+        "changeLanguage":"Elige idioma",
+        "buttonChange":"cambiar idioma"
+    },
+
+    "resetPassword":{
+        "email":"Introduce el email "
+    },
+    "more":{
+        "logout":"salir",
+        "language":"idioma",
+        "title":"mas"
+    },
+    "home":{
+        "title":"home"
+    },
+    "tabs":{
+        "more":"mas",
+        "home":"home",
+        "notification":"notificaciones",
+        "ritmoCardiaco":"Ritmo cardíaco"
+    },
+    "notification":{
+        "delete":"eliminar",
+        "title":"notificaciones"
+    },
+    "ritmocardiaco":{
+        "title":"Ritmo Cardíaco"
+    }
+
+
+
+
+}

@@ -1,0 +1,47 @@
+<app-header titulo=" {{'notification.title'|translate}}" backButton="no"></app-header>
+
+<ion-content>
+  <ion-refresher color="colorbasico" slot="fixed" (ionRefresh)="refresh($event)">
+    <ion-refresher-content refreshingSpinner="crescent" pullingIcon="arrow-dropdown" color="colorbasico" >
+    </ion-refresher-content>
+
+  </ion-refresher>
+  <div class="content">
+    <ion-item-sliding *ngFor="let noti of notificaciones">
+      <ion-item >
+        <div [ngClass]="!noti.open?'item-list':'item-list-open'">
+    <div class="list animated fadeIn fast" >
+     
+      <div class="card" (click)="goNotification(noti)">
+        <div [ngClass]="!noti.open?'card-title':'card-title-open'">
+          {{noti.title}}
+        </div>
+        <div [ngClass]="!noti.open?'card-content':'card-content-open'">
+         Información. {{noti.body}}<br/>
+         <div class="card-date">{{noti.startDate}}</div>
+        </div>
+       
+      </div>
+   
+    </div>
+    </div>
+    </ion-item >
+    <ion-item-options class="slide" side="end">
+      <ion-item-option  class="slideUp" slot="icon-only"(click)="deleteNotification(noti._id)"><ion-icon class="icon" color="blanco" class="slideup" name="trash"></ion-icon></ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>
+  </div>
+<div class="content-generator">
+  <div class="generador">
+   <form [formGroup]='form' (ngSubmit)="onSubmit()">
+     <label>Titulo</label>
+     <input type="text" formControlName="title"/><br/>
+     <label>Descripcion</label>
+     <input type="text" formControlName="body"/><br/>
+     <label>Otros datos</label>
+     <input type="text" formControlName="data"/><br/>
+     <input type="submit" value="Enviar"/>
+   </form>
+  </div>
+</div>
+</ion-content>

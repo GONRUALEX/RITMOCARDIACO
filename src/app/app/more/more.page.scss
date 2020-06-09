@@ -1,0 +1,52 @@
+ion-content{
+    background-color:whitesmoke;
+    height: 100%;
+    width:100%;
+    .content{
+       
+        width:90%;
+        margin:0 auto;
+        
+    
+    .list{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top:20px;
+    }
+    .item{
+        height: 60px;
+        display:flex;
+        flex-direction:row;
+        padding:20px;
+        font-size:1.2em;
+        border-bottom:solid 1px rgb(0, 225, 255);
+        border-radius:5px;
+        color:rgb(6, 174, 180);
+        justify-content: space-between;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        
+    }
+    .item:active{
+       padding-left:30px;
+        color:rgb(6, 60, 95);
+      
+    }
+    .label{
+       
+    }
+    .label:first-letter{
+        text-transform: capitalize;
+    }
+    .icon{
+        height: 25px;
+        width: 25px;
+    }
+    }
+
+
+ 
+
+
+}

@@ -1,0 +1,31 @@
+
+<ion-content>
+
+<div class="contenedor">
+	<div class="header"> 
+		<div class="parrafotitulo">Seleciona un dispositivo:</div>
+		<div class="close">
+			
+			<ion-icon class="icono" name="close-circle" (click)="close()"></ion-icon>
+		</div>
+	</div>
+	<div class="content">
+		<div class="warning" *ngIf="devices.length==0">No se encuentran dispositivos</div>
+		<div class="lista"  *ngFor="let device of devices;let i = index" [ngClass]="(i % 2 == 0)?'par':'impar'" (click)="deviceSelected(device)">
+			
+		<div class=parrafos>			
+		<div class="parrafo">Nombre : {{device.name || 'Unname'}}</div>
+		<div class="parrafo">Id : {{device.id}}</div>
+		<div class="parrafo"> RSSI: {{device.rssi}}</div>
+		</div>
+		<div class="connect">
+				<ion-icon class="icono2" name="bluetooth"></ion-icon>
+		</div>
+				</div>
+			
+
+	
+	</div>
+</div>
+</ion-content>
+

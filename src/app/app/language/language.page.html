@@ -1,0 +1,34 @@
+<app-header titulo="{{'language.title' | translate}}" backButton="si" go="tabs/more"></app-header>
+
+<ion-content>
+  
+
+
+
+
+
+<div class="content">
+  <div class="list">
+    <ion-radio-group [(ngModel)]="activateLang" >
+    <div class="item" (click)="activateLang='es'" >
+      <div class="label">
+        {{'language.spanish' | translate}}
+        
+      </div>
+      <div >
+        <ion-radio slot="start" value="es"></ion-radio> 
+      </div>
+      </div>
+        <div class="item" (click)="activateLang='en'">
+          <div class="label">
+            {{'language.english'| translate}}
+      </div>
+      <div >
+        <ion-radio slot="start" value="en"  ></ion-radio> 
+        </div>
+    </div>
+  </ion-radio-group>
+  </div>
+  <ion-button expand="block" size="small" text-capitalize fill="outline" color="colorbasico" class="button"  (click)="changeLanguage()">{{'language.buttonChange' | translate}}</ion-button>
+  </div>
+</ion-content>

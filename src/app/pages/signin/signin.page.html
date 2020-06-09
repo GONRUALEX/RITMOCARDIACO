@@ -1,0 +1,101 @@
+
+<ion-content>
+  <div class="content">
+    <div class="barra">
+      <ion-icon (click)="goLogin()" class="flecha" name="arrow-back" slot="start"></ion-icon>
+     
+ 
+   </div>
+    <div class="center">
+      <div class="logo">
+      
+  
+      </div>
+      <div class="form">
+  <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+    <ion-label position="floating">{{'signin.name' | translate}}</ion-label>
+    <div class="item">
+     <div class="horizontal">
+      <ion-input type="text" formControlName="name"></ion-input>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.name.errors"></ion-icon>
+     </div>
+      <div class="errors" *ngIf="credentialsForm.controls.name.errors && (credentialsForm.controls.name.touched || credentialsForm.controls.name.dirty)">
+        <div *ngIf="credentialsForm.controls.name.errors.required">{{'signin.errors.require' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.name.errors.minlength">{{'signin.errors.min' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.name.errors.maxlength">{{'signin.errors.max' | translate}}</div>
+      </div>
+    </div>
+    <ion-label position="floating">{{'signin.surname' | translate}}</ion-label>
+    <div class="item">
+      <div class="horizontal">
+      <ion-input type="text" formControlName="surname"></ion-input>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.surname.errors"></ion-icon>
+      </div>
+      <div class="errors" *ngIf="credentialsForm.controls.surname.errors && (credentialsForm.controls.surname.touched || credentialsForm.controls.surname.dirty)">
+        <div *ngIf="credentialsForm.controls.surname.errors.required">{{'signin.errors.require' | translate}}}</div>
+        <div *ngIf="credentialsForm.controls.surname.errors.minlength">{{'signin.errors.min' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.surname.errors.maxlength">{{'signin.errors.max' | translate}}</div>
+      </div>
+    </div>
+    <ion-label position="floating">{{'signin.birthdate' | translate}}</ion-label>
+    <div class="item">
+      <div class="horizontal">
+      <ion-input type="date" formControlName="birthDate"></ion-input>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.birthDate.errors"></ion-icon>
+      </div>
+      <div  class="errors" *ngIf="credentialsForm.controls.birthDate.errors && (credentialsForm.controls.birthDate.touched || credentialsForm.controls.birthDate.dirty)">
+        <div *ngIf="credentialsForm.controls.birthDate.errors.required">{{'signin.errors.require'| translate}}</div>
+        <div *ngIf="credentialsForm.controls.birthDate.errors.fecha">{{'signin.errors.date' | translate}}</div> 
+      </div>
+      <div> 
+      </div>
+    </div>
+    <ion-label position="floating">{{'signin.email' | translate}}</ion-label>
+    <div class="item">
+      <div class="horizontal">
+      <ion-input type="email" formControlName="email"></ion-input>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.email.errors"></ion-icon>
+      </div>
+      <div class="errors" *ngIf="credentialsForm.controls.email.errors && (credentialsForm.controls.email.touched || credentialsForm.controls.email.dirty)">
+        <div *ngIf="credentialsForm.controls.email.errors.required">{{'signin.errors.require' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.email.errors.email">{{'signin.errors.email' | translate}}</div>
+      </div>
+    </div>
+    <ion-label position="floating">{{'signin.password' | translate}}</ion-label>
+    <div class="item">
+      <div class="horizontal">
+      <ion-input type="{{vistaPassword}}" formControlName="password" ></ion-input>
+      <ion-icon class="eye" name="{{iconoPassword}}" (click)="cambioIcono()" slot="end"></ion-icon>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.password.errors"></ion-icon>
+      </div>
+      <div class="errors" *ngIf="credentialsForm.controls.password.errors && (credentialsForm.controls.password.touched || credentialsForm.controls.password.dirty)">
+        <div *ngIf="credentialsForm.controls.password.errors.required">{{'signin.errors.require' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.password.errors.minlength">{{'signin.errors.min' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.password.errors.maxlength">{{'signin.errors.max' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.password.errors.pattern">{{'signin.errors.password' | translate}}</div>
+      </div>
+    </div>
+    <ion-label position="floating">{{'signin.repeatpassword' | translate}}</ion-label>
+    <div class="item">
+      <div class="horizontal">
+      <ion-input type="{{vistaPassword}}" formControlName="repeatPassword" [disabled]="credentialsForm.controls.password.errors"></ion-input>
+      <ion-icon class="eye" name="{{iconoPassword}}" (click)="cambioIcono()" slot="end"></ion-icon>
+      <ion-icon class="stick" name="checkmark-circle" slot="end" *ngIf="!credentialsForm.controls.repeatPassword.errors"></ion-icon>
+    </div>
+      <div class="errors" *ngIf="credentialsForm.controls.repeatPassword.errors && (credentialsForm.controls.repeatPassword.touched || credentialsForm.controls.repeatPassword.dirty)">
+        <div *ngIf="credentialsForm.controls.repeatPassword.errors.required">{{'signin.errors.require' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.repeatPassword.errors.minlength">{{'signin.errors.min' | translate}}</div>
+        <div *ngIf="credentialsForm.controls.repeatPassword.errors.maxlength">{{'signin.errors.max' | translate}</div>
+        <div *ngIf="credentialsForm.controls.repeatPassword.errors.notEquals">{{'signin.errors.equals' | translate}}</div>
+      </div>
+     
+    </div>
+
+    <button class="button" type="submit" [ngClass]="!credentialsForm.valid ? 'buttondisabled': 'buttonenabled'" [disabled]="!credentialsForm.valid">{{'signin.send' | translate}}</button>
+    
+ 
+  </form>
+</div>
+</div>
+</div>
+</ion-content>

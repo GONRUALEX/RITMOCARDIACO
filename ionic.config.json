@@ -1,0 +1,7 @@
+{
+  "name": "autorregulacionEmocional",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

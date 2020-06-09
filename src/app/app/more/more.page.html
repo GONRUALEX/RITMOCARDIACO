@@ -1,0 +1,29 @@
+<app-header titulo="{{'more.title' | translate}}" backButton="no"></app-header>
+
+<ion-content>
+  <div class="content">
+<div class="list">
+  <div class="item" (click)="goLanguage()">
+    <div class="label">
+      {{'more.language' | translate}}
+      
+    </div>
+    <div >
+    <ion-icon class="icon" name="arrow-dropright-circle" ></ion-icon>
+    </div>
+    </div>
+    
+      <div class="item" (click)="logout()">
+        <div class="label">
+      {{'more.logout' | translate}}
+    </div>
+   
+    <div >
+      <ion-icon class="icon" name="arrow-dropright-circle" ></ion-icon>
+      </div>
+  </div>
+</div>
+</div>
+
+  
+</ion-content>
